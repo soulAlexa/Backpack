@@ -2,10 +2,13 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMessageBox
 
 
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(800, 600)
+        MainWindow.resize(900, 600)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.centralwidget)
@@ -51,6 +54,9 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
+        self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.verticalLayout.addWidget(self.pushButton_11)
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setObjectName("pushButton_2")
         self.verticalLayout.addWidget(self.pushButton_2)
@@ -117,13 +123,12 @@ class Ui_MainWindow(object):
         self.messegbox = QMessageBox()
         self.messegbox.setWindowTitle("Eror")
         MainWindow.setStatusBar(self.statusbar)
-
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Backpack"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.label_4.setText(_translate("MainWindow", "                        Сформированный рюкзак"))
         self.pushButton_7.setText(_translate("MainWindow", "Очистить рюкзак"))
         self.pushButton_8.setText(_translate("MainWindow", "Сохранить рюкзак"))
@@ -132,6 +137,7 @@ class Ui_MainWindow(object):
         self.pushButton_6.setText(_translate("MainWindow", "Добавить предмет"))
         self.label_6.setText(_translate("MainWindow", "                                     Вес рюкзака"))
         self.pushButton.setText(_translate("MainWindow", "Открыть файл"))
+        self.pushButton_11.setText(_translate("MainWindow", "Добавить в рюкзак, рюкзак"))
         self.pushButton_2.setText(_translate("MainWindow", "Сформировать рюкзак"))
         self.pushButton_3.setText(_translate("MainWindow", "Удалить таблицу"))
         self.pushButton_9.setText(_translate("MainWindow", "Сохранить список"))
@@ -139,4 +145,4 @@ class Ui_MainWindow(object):
         self.label_3.setText(_translate("MainWindow", "Ценность предмета"))
         self.label.setText(_translate("MainWindow", "     Название предмета"))
         self.label_5.setText(_translate("MainWindow", "                              Список предметов"))
-        self.pushButton_10.setText(_translate("MainWindow", "Принудительная завершение процесса"))
+        self.pushButton_10.setText(_translate("MainWindow", "Принудительное завершение процесса"))
